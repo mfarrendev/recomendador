@@ -1,0 +1,5 @@
+node_modules
+dist
+salidas
+*.modelo.json
+ml-100k

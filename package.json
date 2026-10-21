@@ -1,0 +1,25 @@
+{
+  "name": "recomendador",
+  "version": "0.1.0",
+  "description": "Sistema de recomendación en TypeScript sin dependencias: popularidad, item-kNN, ALS implícito, BPR, arranque en frío y evaluación con partición temporal.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Max Farren",
+  "engines": {
+    "node": ">=24"
+  },
+  "bin": {
+    "recomendador": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "cli": "node --experimental-strip-types src/cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "~5.9.3",
+    "vitest": "^4.1.12"
+  }
+}
